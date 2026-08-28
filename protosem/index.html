@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOSEM | Jency Soundarya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../spatial.css" rel="stylesheet">
+    <script src="../components.js"></script>
+</head>
+
+<body>
+
+    <!-- Cinematic Background Environment -->
+    <div class="ambient-field"
+        style="background: radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.05) 0%, transparent 70%);"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Minimal Floating Navigation -->
+    <global-navbar active-page="PROTOSEM"></global-navbar>
+
+    <!-- 08 PROTOSEM HERO -->
+    <section class="min-h-screen flex items-center justify-center relative spatial-container pt-32 pb-16 px-4 md:px-12">
+        <div class="max-w-4xl mx-auto text-center relative z-10 reveal-up">
+            <bread-crumbs path="HOME, PROTOSEM"></bread-crumbs>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-frost text-grad-cyber"
+                style="line-height: 1.1;">
+                PROTOSEM
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-accent-cyan font-bold mb-4">PRICE ProtoSem — Innovation Engineer
+                Trainee</h2>
+            <p class="text-meta text-muted mb-8">20-WEEK INDUSTRY-INTEGRATED INNOVATION PROGRAMME</p>
+
+            <p class="text-lg md:text-xl text-muted leading-relaxed mb-16 italic max-w-3xl mx-auto">
+                "Selected for a 20-week industry-integrated innovation programme focused on solving real-world retail
+                and commerce challenges through AI, analytics, intelligent systems, IoT, prototyping, and
+                entrepreneurship. Working with industry problem statements to explore, develop, and validate practical
+                technology solutions beyond conventional classroom learning."
+            </p>
+
+            <!-- Programme Focus -->
+            <h3 class="text-sm font-bold text-white tracking-widest uppercase mb-8">PROGRAMME FOCUS</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span
+                    class="editorial-glass px-6 py-3 rounded-full text-sm font-bold text-accent-violet border border-accent-violet/20 hover:border-accent-violet transition-colors cursor-default">Phygital
+                    Retail & Intelligent Commerce</span>
+                <span
+                    class="editorial-glass px-6 py-3 rounded-full text-sm font-bold text-accent-cyan border border-accent-cyan/20 hover:border-accent-cyan transition-colors cursor-default">AI
+                    & Analytics</span>
+                <span
+                    class="editorial-glass px-6 py-3 rounded-full text-sm font-bold text-accent-pink border border-accent-pink/20 hover:border-accent-pink transition-colors cursor-default">Intelligent
+                    Systems & IoT</span>
+                <span
+                    class="editorial-glass px-6 py-3 rounded-full text-sm font-bold text-frost border border-white/20 hover:border-white transition-colors cursor-default">Prototyping</span>
+                <span
+                    class="editorial-glass px-6 py-3 rounded-full text-sm font-bold text-frost border border-white/20 hover:border-white transition-colors cursor-default">Entrepreneurship</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 09 & 10 WEEKLY TRACKER (Editorial Timeline) -->
+    <section class="py-32 px-4 md:px-12 relative z-10 border-t border-white/5 bg-[rgba(255,255,255,0.01)]">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-24 text-center reveal-up">THE JOURNEY</h2>
+
+            <div id="timeline-container" class="space-y-40 relative">
+                <!-- A subtle vertical line connecting all entries -->
+                <div
+                    class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent -translate-x-1/2 hidden md:block">
+                </div>
+                <!-- Timeline injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- DRAMATIC FOOTER -->
+    <global-footer></global-footer>
+
+    <!-- Timeline Generation Engine -->
+    <script>
+        const protosemWeeks = [
+            {
+                week: "00",
+                title: "Orientation & Launch",
+                tagline: "4 Days of Connection, Discovery & Team Building",
+                overview: "Four days of introductions, discovery, learning, games, and team spirit that kicked off the ProtoSem journey.",
+                highlights: "CONNECT → DISCOVER → COLLABORATE → LAUNCH",
+                activities: [
+                    "<b>Day 01 — Icebreakers & Introductions:</b> Self and class introductions, followed by the Rock Paper Scissors game.",
+                    "<b>Day 02 — Discover & Present:</b> LinkedIn session, 16Personalities assessment, and short story presentations.",
+                    "<b>Day 03 — Stories, Talks & Team Games:</b> Story presentations, ITEC TechTalk, Imposter, Challenge, and Marshmello games.",
+                    "<b>Day 04 — Learning & Launch:</b> The Art of Prompting TechTalk, orientation by Hema, leaderboard briefing, and official inauguration."
+                ]
+            }
+        ];
+
+        // Fill remaining up to week 14 with Field Notes in Progress
+        for (let i = 1; i <= 14; i++) {
+            let weekNum = i < 10 ? '0' + i : i.toString();
+            protosemWeeks.push({
+                week: weekNum,
+                title: "Field Notes in Progress",
+                tagline: "Exploration ongoing...",
+                overview: "Details for this week are currently being compiled.",
+                activities: []
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('timeline-container');
+            let html = '';
+
+            protosemWeeks.forEach((data, index) => {
+                const isEven = index % 2 === 0;
+
+                let activitiesHtml = '';
+                if (data.activities && data.activities.length > 0) {
+                    activitiesHtml = `<ul class="space-y-3 mt-6 text-sm text-muted">`;
+                    data.activities.forEach(act => {
+                        activitiesHtml += `<li class="flex gap-3"><span>▹</span> <span>${act}</span></li>`;
+                    });
+                    activitiesHtml += `</ul>`;
+                }
+
+                let highlightsHtml = '';
+                if (data.highlights) {
+                    highlightsHtml = `<p class="text-xs font-bold tracking-widest text-accent-cyan mt-6">${data.highlights}</p>`;
+                }
+
+                html += `
+                <div class="grid md:grid-cols-2 gap-12 items-center reveal-up group">
+                    
+                    <!-- Left Side (Content or Image based on odd/even) -->
+                    <div class="order-2 ${isEven ? 'md:order-1 md:text-right' : 'md:order-2 md:text-left'}">
+                        <div class="editorial-glass p-8 group-hover:border-accent-cyan transition-colors relative cursor-pointer" data-cursor-text="EXPLORE">
+                            <span class="text-6xl font-black text-white/5 absolute ${isEven ? 'right-4' : 'left-4'} top-4 group-hover:text-white/10 transition-colors pointer-events-none">W${data.week}</span>
+                            <h3 class="text-3xl font-bold mb-2">WEEK ${data.week}</h3>
+                            <h4 class="text-xl text-frost mb-4">${data.title}</h4>
+                            <p class="text-meta text-accent-cyan mb-6">${data.tagline}</p>
+                            <p class="text-muted leading-relaxed">${data.overview}</p>
+                            ${activitiesHtml}
+                            ${highlightsHtml}
+                            
+                            <!-- Explore Button -->
+                            <div class="mt-8">
+                                <a href="week-${data.week}/index.html" class="text-xs font-bold uppercase tracking-widest text-frost border-b border-frost pb-1 group-hover:text-accent-cyan group-hover:border-accent-cyan transition-colors" data-cursor-text="OPEN">Explore Week ${data.week} ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side (Timeline Node & Counter Part) -->
+                    <div class="order-1 ${isEven ? 'md:order-2' : 'md:order-1'} flex justify-center relative">
+                        <!-- Node Point -->
+                        <div class="absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white/20 border-2 border-transparent group-hover:bg-accent-cyan group-hover:border-accent-cyan group-hover:scale-150 transition-all duration-300 hidden md:block ${isEven ? '-left-2' : '-right-2'} z-20 shadow-[0_0_15px_rgba(34,211,238,0)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]"></div>
+                        
+                        <!-- Image Container Placeholder -->
+                        <div class="w-full max-w-sm h-64 bg-[rgba(255,255,255,0.02)] border border-white/5 rounded-2xl overflow-hidden relative group-hover:-translate-y-2 group-hover:shadow-2xl transition-all duration-500 cursor-pointer" data-cursor-text="VIEW">
+                            <div class="absolute inset-0 bg-gradient-to-br from-accent-cyan/10 to-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-accent-cyan font-bold tracking-widest text-sm">W${data.week} GALLERY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        });
+    </script>
+    
+    <!-- GSAP & ScrollTrigger Core Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="../physics.js"></script>
+</body>
+
+</html>

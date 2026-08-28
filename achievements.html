@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jency Soundarya | Creative Technologist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="spatial.css" rel="stylesheet">
+    <script src="components.js"></script>
+</head>
+<body
+    class="bg-black text-white font-sans antialiased overflow-x-hidden relative selection:bg-accent-cyan selection:text-black">
+    
+    <!-- Cursor -->
+    <div id="cursor" class="fixed w-4 h-4 bg-white rounded-full pointer-events-none z-[9999] mix-blend-difference hidden md:block" style="transform: translate(-50%, -50%);"></div>
+    <div id="cursor-follower" class="fixed w-10 h-10 border border-white/30 rounded-full pointer-events-none z-[9998] transition-transform duration-300 hidden md:block" style="transform: translate(-50%, -50%);"></div>
+
+    <global-navbar active-page="ACHIEVEMENTS"></global-navbar>
+
+    <main class="pt-16">
+        
+    <!-- CYBER DASHBOARD SECTION -->
+    <section id="achievements" class="pt-32 pb-12 px-4 md:px-8 relative z-10 bg-black min-h-screen font-mono">
+        <div class="max-w-[1400px] mx-auto">
+            
+            <!-- 1. Header & Terminal Info -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-10 reveal-up">
+                
+                <!-- Bracket UI Title -->
+                <div class="cyber-bracket inline-block p-4 pl-6 relative">
+                    <!-- Custom brackets for top-right, bottom-left -->
+                    <div class="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-accent-cyan/50 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-accent-cyan/50 pointer-events-none"></div>
+                    
+                    <div class="flex items-center gap-4 mb-2">
+                        <p class="text-xs text-accent-cyan tracking-[0.3em]">05 — RECOGNITION LOG</p>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-2 text-white display-font tracking-tight">ACHIEVEMENTS & ACTIVITIES</h2>
+                    <p class="text-xs text-muted tracking-widest uppercase">Proof of <span class="text-accent-cyan">curiosity</span>. Proof of <span class="text-white">execution</span>. Proof of <span class="text-white">growth</span>.</p>
+                </div>
+                
+                <!-- Terminal Info Block -->
+                <div class="mt-8 lg:mt-0 text-[10px] text-muted tracking-widest uppercase text-left lg:text-right flex gap-12">
+                    <div class="space-y-1">
+                        <p>DATABASE: <span class="text-accent-cyan">STUDENT_RECOGNITION</span></p>
+                        <p>STATUS: <span class="text-[#00ff00]">ACTIVE</span></p>
+                        <p>RECORDS_INDEXED: <span class="text-white">12</span></p>
+                        <p>YEARS_ACTIVE: <span class="text-white">2023 -- 2025</span></p>
+                        <p>TOP_RESULT: <span class="text-[#ffd700]">01</span></p>
+                        <p>DOMAINS: <span class="text-white">05</span></p>
+                    </div>
+                    <div class="space-y-1 hidden md:block border-l border-white/10 pl-12 text-right">
+                        <p>ENG: <span class="text-[#00ff00]">ONLINE</span></p>
+                        <p>LAT: <span class="text-white">12ms</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Stat Cards Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6 reveal-up">
+                <!-- Stat 1 -->
+                <div class="cyber-panel p-4 flex items-center gap-4 border border-accent-cyan/20">
+                    <div class="text-accent-cyan opacity-80">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15c-3 0-6-1.5-6-4V5h12v6c0 2.5-3 4-6 4z"/><path d="M6 7H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2"/><path d="M18 7h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2"/><path d="M12 15v7"/><path d="M8 22h8"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">12</p>
+                        <p class="text-[9px] text-muted tracking-widest uppercase">Total Recognitions</p>
+                    </div>
+                    <div class="absolute bottom-2 right-2 text-[8px] text-white/20">REC_000</div>
+                </div>
+                <!-- Stat 2 -->
+                <div class="cyber-panel p-4 flex items-center gap-4 border border-[#ffd700]/20">
+                    <div class="text-[#ffd700] opacity-80">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><rect x="8" y="10" width="4" height="6" rx="1"/><rect x="14" y="6" width="4" height="10" rx="1"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-[#ffd700]">04</p>
+                        <p class="text-[9px] text-muted tracking-widest uppercase">Podium Finishes</p>
+                    </div>
+                    <div class="absolute bottom-2 right-2 text-[8px] text-white/20">REC_001</div>
+                </div>
+                <!-- Stat 3 -->
+                <div class="cyber-panel p-4 flex items-center gap-4 border border-accent-pink/20">
+                    <div class="text-accent-pink opacity-80">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-accent-pink">06</p>
+                        <p class="text-[9px] text-muted tracking-widest uppercase">Events Participated</p>
+                    </div>
+                    <div class="absolute bottom-2 right-2 text-[8px] text-white/20">REC_002</div>
+                </div>
+                <!-- Stat 4 -->
+                <div class="cyber-panel p-4 flex items-center gap-4 border border-[#cd7f32]/20">
+                    <div class="text-[#cd7f32] opacity-80">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-[#cd7f32]">03</p>
+                        <p class="text-[9px] text-muted tracking-widest uppercase">Years of Impact</p>
+                    </div>
+                    <div class="absolute bottom-2 right-2 text-[8px] text-white/20">REC_003</div>
+                </div>
+                <!-- Stat 5 -->
+                <div class="cyber-panel p-4 flex items-center gap-4 border border-white/10">
+                    <div class="text-white/60">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">05</p>
+                        <p class="text-[9px] text-muted tracking-widest uppercase">Domains Explored</p>
+                    </div>
+                    <div class="absolute bottom-2 right-2 text-[8px] text-white/20">REC_004</div>
+                </div>
+            </div>
+
+            <!-- 3. Category Filters -->
+            <div class="flex flex-wrap gap-2 mb-6 reveal-up" id="achievement-filters">
+                <button class="filter-btn active px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-accent-cyan text-accent-cyan bg-accent-cyan/10 transition-all flex gap-2 items-center" data-filter="all">ALL</button>
+                <button class="filter-btn px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-white/10 text-muted bg-[rgba(255,255,255,0.02)] hover:border-[#ffd700]/50 hover:text-[#ffd700] transition-all flex gap-2 items-center" data-filter="awards"><span>🏆</span> AWARDS</button>
+                <button class="filter-btn px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-white/10 text-muted bg-[rgba(255,255,255,0.02)] hover:border-accent-cyan/50 hover:text-accent-cyan transition-all flex gap-2 items-center" data-filter="technical"><span>💻</span> TECHNICAL</button>
+                <button class="filter-btn px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-white/10 text-muted bg-[rgba(255,255,255,0.02)] hover:border-accent-pink/50 hover:text-accent-pink transition-all flex gap-2 items-center" data-filter="creative"><span>🎨</span> CREATIVE</button>
+                <button class="filter-btn px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-white/10 text-muted bg-[rgba(255,255,255,0.02)] hover:border-white/50 hover:text-white transition-all flex gap-2 items-center" data-filter="research"><span>🔬</span> RESEARCH</button>
+                <button class="filter-btn px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-white/10 text-muted bg-[rgba(255,255,255,0.02)] hover:border-accent-violet/50 hover:text-accent-violet transition-all flex gap-2 items-center" data-filter="speaking"><span>🎤</span> SPEAKING</button>
+                <button class="filter-btn px-4 py-2 text-[10px] font-bold tracking-widest uppercase rounded border border-white/10 text-muted bg-[rgba(255,255,255,0.02)] hover:border-white/50 hover:text-white transition-all flex gap-2 items-center" data-filter="participation"><span>🌐</span> PARTICIPATION</button>
+            </div>
+
+            <!-- MAIN GRID -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 relative reveal-up">
+                
+                <!-- LEFT COLUMN (Span 4) -->
+                <div class="lg:col-span-4 space-y-6">
+                    
+                    <!-- Featured Recognition Card -->
+                    <div class="cyber-panel border-[#ffd700]/30 shadow-[0_0_20px_rgba(255,215,0,0.1)] p-6 group timeline-item" data-category="awards creative">
+                        <div class="flex justify-between items-center mb-12">
+                            <span class="text-[10px] font-bold text-white/50 tracking-widest uppercase">FEATURED RECOGNITION // 01</span>
+                            <span class="text-[10px] font-mono text-[#ffd700]/50">REC_001</span>
+                        </div>
+                        
+                        <div class="text-center mb-8 relative">
+                            <!-- SVG Wreath -->
+                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 text-[#ffd700] opacity-40 group-hover:opacity-80 transition-opacity" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M 10,50 C 10,20 30,10 50,10 C 70,10 90,20 90,50 C 90,80 70,90 50,90 C 30,90 10,80 10,50" stroke-dasharray="10 5" />
+                                <path d="M 25,75 L 15,90 L 35,85 Z" fill="currentColor"/>
+                                <path d="M 75,75 L 85,90 L 65,85 Z" fill="currentColor"/>
+                            </svg>
+                            <h3 class="text-5xl font-black text-white relative z-10 drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">01</h3>
+                            <p class="text-sm font-bold text-[#ffd700] tracking-widest uppercase relative z-10 mt-1">GOLD</p>
+                        </div>
+                        
+                        <div class="text-center mb-8">
+                            <h4 class="text-2xl font-bold text-white mb-2 display-font tracking-wide">GRAB YOUR CROWN</h4>
+                            <p class="text-sm text-white/80 font-sans">Short Film Competition</p>
+                            <p class="text-[10px] text-muted mt-2 tracking-wider">Student Service Centre<br>VHNSN College</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-left border-t border-white/10 pt-4">
+                            <div>
+                                <p class="text-[9px] text-muted tracking-widest uppercase mb-1">CATEGORY</p>
+                                <p class="text-xs text-[#ffd700] font-bold tracking-widest uppercase">CREATIVE</p>
+                            </div>
+                            <div>
+                                <p class="text-[9px] text-muted tracking-widest uppercase mb-1">RESULT</p>
+                                <p class="text-xs text-white font-bold tracking-widest uppercase">1ST PLACE</p>
+                            </div>
+                            <div>
+                                <p class="text-[9px] text-muted tracking-widest uppercase mb-1">YEAR</p>
+                                <p class="text-xs text-white font-bold tracking-widest uppercase">2024</p>
+                            </div>
+                            <div>
+                                <p class="text-[9px] text-muted tracking-widest uppercase mb-1">DOMAIN</p>
+                                <p class="text-xs text-white font-bold tracking-widest uppercase">FILM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-wrap justify-center gap-2 mb-8">
+                            <span class="px-2 py-1 rounded border border-accent-pink/30 text-accent-pink text-[9px] bg-accent-pink/5 font-bold tracking-widest uppercase">CREATIVE</span>
+                            <span class="px-2 py-1 rounded border border-white/20 text-white/60 text-[9px] font-bold tracking-widest uppercase">FILM</span>
+                            <span class="px-2 py-1 rounded border border-white/20 text-white/60 text-[9px] font-bold tracking-widest uppercase">STORYTELLING</span>
+                        </div>
+                        
+                        <button class="w-full py-4 border border-[#ffd700]/50 hover:bg-[#ffd700]/10 text-white text-[10px] font-bold tracking-widest uppercase transition-colors flex justify-between px-6 items-center">
+                            VIEW ACHIEVEMENT <span>→</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Radar Chart (Static SVG replica) -->
+                    <div class="cyber-panel p-6 border-accent-cyan/20">
+                        <span class="text-[10px] font-bold text-accent-cyan tracking-widest uppercase mb-4 block">RECOGNITION MAP</span>
+                        <div class="flex items-center gap-4">
+                            <div class="w-1/2 relative aspect-square">
+                                <!-- Pentagon Radar Base -->
+                                <svg viewBox="0 0 100 100" class="w-full h-full opacity-30 text-accent-cyan">
+                                    <polygon points="50,5 95,38 78,90 22,90 5,38" fill="none" stroke="currentColor" stroke-width="1"/>
+                                    <polygon points="50,25 75,45 65,75 35,75 25,45" fill="none" stroke="currentColor" stroke-width="1"/>
+                                    <line x1="50" y1="50" x2="50" y2="5" stroke="currentColor" stroke-width="1"/>
+                                    <line x1="50" y1="50" x2="95" y2="38" stroke="currentColor" stroke-width="1"/>
+                                    <line x1="50" y1="50" x2="78" y2="90" stroke="currentColor" stroke-width="1"/>
+                                    <line x1="50" y1="50" x2="22" y2="90" stroke="currentColor" stroke-width="1"/>
+                                    <line x1="50" y1="50" x2="5" y2="38" stroke="currentColor" stroke-width="1"/>
+                                </svg>
+                                <!-- Filled Data -->
+                                <svg viewBox="0 0 100 100" class="w-full h-full absolute inset-0 text-accent-cyan shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+                                    <polygon points="50,15 85,38 70,80 30,85 15,45" fill="rgba(34,211,238,0.2)" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <!-- Labels -->
+                                <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-4 text-[6px] text-white tracking-widest">CREATIVITY</span>
+                                <span class="absolute top-[35%] -right-4 text-[6px] text-white tracking-widest">TECHNICAL</span>
+                                <span class="absolute bottom-0 right-0 translate-y-4 text-[6px] text-white tracking-widest">COMMUNICATION</span>
+                                <span class="absolute bottom-0 left-0 translate-y-4 text-[6px] text-white tracking-widest">LEADERSHIP</span>
+                                <span class="absolute top-[35%] -left-4 text-[6px] text-white tracking-widest">RESEARCH</span>
+                            </div>
+                            
+                            <div class="w-1/2 space-y-3 pl-4 border-l border-white/10">
+                                <div>
+                                    <div class="flex justify-between text-[8px] tracking-widest mb-1 text-white"><span>Creativity</span><span>9.2</span></div>
+                                    <div class="h-[2px] bg-white/10 w-full"><div class="h-full bg-accent-cyan w-[92%] shadow-[0_0_5px_var(--accent-cyan)]"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-[8px] tracking-widest mb-1 text-white"><span>Technical</span><span>7.8</span></div>
+                                    <div class="h-[2px] bg-white/10 w-full"><div class="h-full bg-accent-cyan w-[78%]"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-[8px] tracking-widest mb-1 text-white"><span>Communication</span><span>8.6</span></div>
+                                    <div class="h-[2px] bg-white/10 w-full"><div class="h-full bg-accent-cyan w-[86%]"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-[8px] tracking-widest mb-1 text-white"><span>Leadership</span><span>7.2</span></div>
+                                    <div class="h-[2px] bg-white/10 w-full"><div class="h-full bg-accent-cyan w-[72%]"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-[8px] tracking-widest mb-1 text-white"><span>Research</span><span>7.5</span></div>
+                                    <div class="h-[2px] bg-white/10 w-full"><div class="h-full bg-accent-cyan w-[75%]"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIDDLE COLUMN (Span 5) -->
+                <div class="lg:col-span-5 flex flex-col gap-6">
+                    <div class="cyber-panel p-6 border-white/10 flex-1 relative">
+                        <span class="text-[10px] font-bold text-accent-cyan tracking-widest uppercase mb-8 block">RECOGNITION TIMELINE</span>
+                        
+                        <div id="timeline-container" class="space-y-6 relative">
+                            <!-- Vertical Line -->
+                            <div class="absolute left-3 top-2 bottom-0 w-[1px] bg-white/10"></div>
+                            
+                            <!-- 2025 -->
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="text-xs font-bold text-accent-cyan tracking-widest bg-[#050507] py-1">2025</span>
+                                </div>
+                                <div class="pl-10 relative mb-4 timeline-item group cursor-pointer" data-category="awards research technical">
+                                    <!-- Timeline Node -->
+                                    <div class="absolute left-[-26px] top-2 w-2 h-2 rounded-full bg-accent-cyan shadow-[0_0_8px_var(--accent-cyan)]"></div>
+                                    <!-- Rank Icon Bronze -->
+                                    <div class="absolute left-0 top-0 w-6 h-6 rounded-full border border-[#cd7f32] flex items-center justify-center text-[10px] text-[#cd7f32]">3</div>
+                                    
+                                    <div class="flex justify-between items-start border-b border-white/5 pb-4 group-hover:border-white/20 transition-colors">
+                                        <div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="text-xl font-bold text-white/50 group-hover:text-white transition-colors">03</span>
+                                                <h4 class="text-xs font-bold text-white uppercase tracking-widest">PAPER PRESENTATION</h4>
+                                            </div>
+                                            <p class="text-[9px] text-muted mt-1">Department of Data Science</p>
+                                            <p class="text-[9px] text-muted">American College Satellite Campus</p>
+                                        </div>
+                                        <div class="flex flex-col items-end gap-2">
+                                            <span class="text-[8px] font-mono text-white/30">REC_005</span>
+                                            <span class="px-2 py-1 rounded border border-[#cd7f32]/30 text-[#cd7f32] text-[9px] bg-[#cd7f32]/5 font-bold tracking-widest uppercase">RESEARCH</span>
+                                            <span class="text-[9px] font-bold text-white/40 uppercase group-hover:text-white transition-colors">VIEW →</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2024 -->
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="text-xs font-bold text-accent-cyan tracking-widest bg-[#050507] py-1">2024</span>
+                                </div>
+                                
+                                <div class="pl-10 relative mb-4 timeline-item group cursor-pointer" data-category="awards creative">
+                                    <!-- Timeline Node -->
+                                    <div class="absolute left-[-26px] top-2 w-2 h-2 rounded-full bg-[#ffd700] shadow-[0_0_8px_#ffd700]"></div>
+                                    <!-- Rank Icon Bronze -->
+                                    <div class="absolute left-0 top-0 w-6 h-6 rounded-full border border-[#cd7f32] flex items-center justify-center text-[10px] text-[#cd7f32]">3</div>
+                                    
+                                    <div class="flex justify-between items-start border-b border-white/5 pb-4 group-hover:border-white/20 transition-colors">
+                                        <div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="text-xl font-bold text-white/50 group-hover:text-white transition-colors">03</span>
+                                                <h4 class="text-xs font-bold text-white uppercase tracking-widest">STRESS INTERVIEW &<br>PAPER PRESENTATION</h4>
+                                            </div>
+                                            <p class="text-[9px] text-muted mt-1">Department of Computer Science</p>
+                                            <p class="text-[9px] text-muted">Fatima College</p>
+                                        </div>
+                                        <div class="flex flex-col items-end gap-2">
+                                            <span class="text-[8px] font-mono text-white/30">REC_006</span>
+                                            <span class="px-2 py-1 rounded border border-accent-pink/30 text-accent-pink text-[9px] bg-accent-pink/5 font-bold tracking-widest uppercase">SPEAKING</span>
+                                            <span class="text-[9px] font-bold text-white/40 uppercase group-hover:text-white transition-colors">VIEW →</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pl-10 relative mb-4 timeline-item group cursor-pointer" data-category="awards technical">
+                                    <!-- Timeline Node -->
+                                    <div class="absolute left-[-26px] top-2 w-2 h-2 rounded-full bg-accent-cyan shadow-[0_0_8px_var(--accent-cyan)]"></div>
+                                    <!-- Rank Icon Silver -->
+                                    <div class="absolute left-0 top-0 w-6 h-6 rounded-full border border-[#c0c0c0] flex items-center justify-center text-[10px] text-[#c0c0c0]">2</div>
+                                    
+                                    <div class="flex justify-between items-start border-b border-white/5 pb-4 group-hover:border-white/20 transition-colors">
+                                        <div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="text-xl font-bold text-white/50 group-hover:text-white transition-colors">02</span>
+                                                <h4 class="text-xs font-bold text-white uppercase tracking-widest">TECH CHARADES</h4>
+                                            </div>
+                                            <p class="text-[9px] text-muted mt-1">Department of Computer Science</p>
+                                            <p class="text-[9px] text-muted">Bishop Heber College</p>
+                                        </div>
+                                        <div class="flex flex-col items-end gap-2">
+                                            <span class="text-[8px] font-mono text-white/30">REC_002</span>
+                                            <span class="px-2 py-1 rounded border border-accent-cyan/30 text-accent-cyan text-[9px] bg-accent-cyan/5 font-bold tracking-widest uppercase">TECHNICAL</span>
+                                            <span class="text-[9px] font-bold text-white/40 uppercase group-hover:text-white transition-colors">VIEW →</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pl-10 relative mb-4 timeline-item group cursor-pointer" data-category="awards creative">
+                                    <!-- Timeline Node -->
+                                    <div class="absolute left-[-26px] top-2 w-2 h-2 rounded-full bg-accent-pink shadow-[0_0_8px_var(--accent-pink)]"></div>
+                                    <!-- Rank Icon Gold -->
+                                    <div class="absolute left-0 top-0 w-6 h-6 rounded-full border border-[#ffd700] flex items-center justify-center text-[10px] text-[#ffd700]">🏆</div>
+                                    
+                                    <div class="flex justify-between items-start border-b border-white/5 pb-4 group-hover:border-white/20 transition-colors">
+                                        <div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="text-xl font-bold text-[#ffd700]/80 group-hover:text-[#ffd700] transition-colors">**</span>
+                                                <h4 class="text-xs font-bold text-[#ffd700] uppercase tracking-widest">MULTIPLE PRIZES</h4>
+                                            </div>
+                                            <p class="text-[9px] text-muted mt-1">Culinary Quest, T-Shirt Painting & Hairdressing</p>
+                                            <p class="text-[9px] text-muted">Department of French, Lady Doak College</p>
+                                        </div>
+                                        <div class="flex flex-col items-end gap-2">
+                                            <span class="text-[8px] font-mono text-white/30">REC_007</span>
+                                            <span class="px-2 py-1 rounded border border-accent-pink/30 text-accent-pink text-[9px] bg-accent-pink/5 font-bold tracking-widest uppercase">CREATIVE</span>
+                                            <span class="text-[9px] font-bold text-white/40 uppercase group-hover:text-white transition-colors">VIEW →</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 2023 -->
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="text-xs font-bold text-accent-cyan tracking-widest bg-[#050507] py-1">2023</span>
+                                </div>
+                                <div class="pl-10 relative mb-4 timeline-item group cursor-pointer" data-category="participation creative">
+                                    <!-- Timeline Node -->
+                                    <div class="absolute left-[-26px] top-2 w-2 h-2 rounded-full bg-[#8b5cf6] shadow-[0_0_8px_#8b5cf6]"></div>
+                                    <!-- Group Icon -->
+                                    <div class="absolute left-0 top-0 w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-[10px] text-white/50">👥</div>
+                                    
+                                    <div class="flex justify-between items-start pb-4 group-hover:border-white/20 transition-colors">
+                                        <div>
+                                            <div class="flex items-center gap-3">
+                                                <h4 class="text-xs font-bold text-white uppercase tracking-widest">PARTICIPATION</h4>
+                                            </div>
+                                            <p class="text-[9px] text-muted mt-1">Youth Talk -- Regional Pre-Finals</p>
+                                            <p class="text-[9px] text-muted">Various Platforms</p>
+                                        </div>
+                                        <div class="flex flex-col items-end gap-2">
+                                            <span class="text-[8px] font-mono text-white/30">REC_008</span>
+                                            <span class="px-2 py-1 rounded border border-[#8b5cf6]/30 text-[#8b5cf6] text-[9px] bg-[#8b5cf6]/5 font-bold tracking-widest uppercase">PARTICIPATION</span>
+                                            <span class="text-[9px] font-bold text-white/40 uppercase group-hover:text-white transition-colors">VIEW →</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="mt-8 text-center border-t border-white/5 pt-6">
+                            <button class="text-[10px] font-bold text-white/50 tracking-widest uppercase hover:text-white flex items-center justify-center gap-2 mx-auto">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="12" cy="19" r="1"/><circle cx="19" cy="19" r="1"/><circle cx="5" cy="19" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="19" cy="5" r="1"/><circle cx="5" cy="5" r="1"/></svg>
+                                VIEW ALL RECOGNITIONS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-panel p-6 border-white/10 flex items-center gap-6">
+                        <div class="text-accent-cyan text-4xl font-serif">"</div>
+                        <div>
+                            <p class="text-sm font-sans text-white/90 mb-2">The goal was never the trophy.<br>It was becoming someone capable of <span class="border-b border-accent-cyan text-accent-cyan italic">earning</span> it.</p>
+                            <p class="text-[10px] text-accent-cyan font-bold tracking-widest uppercase">-- STILL WRITING MY STORY...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN (Span 3) -->
+                <div class="lg:col-span-3 space-y-6">
+                    
+                    <!-- Beyond the Trophies -->
+                    <div class="cyber-panel p-6 border-white/10">
+                        <span class="text-[10px] font-bold text-white tracking-widest uppercase mb-2 block">BEYOND THE TROPHIES</span>
+                        <p class="text-[9px] text-muted mb-8 font-mono">What these experiences say about me.</p>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex gap-4 items-start">
+                                <div class="text-accent-cyan mt-1">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1.55.59 2.76 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-[10px] font-bold text-white mb-1 tracking-widest uppercase">I CREATE</h5>
+                                    <p class="text-[9px] text-muted leading-relaxed font-mono">Ideas into visuals, stories, and impact.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div class="text-accent-cyan mt-1">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-[10px] font-bold text-white mb-1 tracking-widest uppercase">I COMPETE</h5>
+                                    <p class="text-[9px] text-muted leading-relaxed font-mono">I challenge myself, learn, and improve.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div class="text-accent-cyan mt-1">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-[10px] font-bold text-white mb-1 tracking-widest uppercase">I COMMUNICATE</h5>
+                                    <p class="text-[9px] text-muted leading-relaxed font-mono">I express, present, and influence.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div class="text-accent-cyan mt-1">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H15"/><path d="M10 9H14"/><path d="M3 21H21"/><path d="M12 3V21"/><path d="M8 21L11.5 8"/><path d="M16 21L12.5 8"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-[10px] font-bold text-white mb-1 tracking-widest uppercase">I EXPLORE</h5>
+                                    <p class="text-[9px] text-muted leading-relaxed font-mono">I explore new domains and endless ideas.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div class="text-accent-cyan mt-1">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-[10px] font-bold text-white mb-1 tracking-widest uppercase">I COLLABORATE</h5>
+                                    <p class="text-[9px] text-muted leading-relaxed font-mono">I work with people to build more.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Achievement Gallery -->
+                    <div class="cyber-panel p-6 border-white/10 relative">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-[10px] font-bold text-accent-cyan tracking-widest uppercase">ACHIEVEMENT GALLERY</span>
+                            <span class="text-[8px] font-bold text-white/50 uppercase cursor-pointer hover:text-white">VIEW GALLERY ↔</span>
+                        </div>
+                        
+                        <div class="flex gap-3 overflow-hidden">
+                            <!-- Thumb 1 -->
+                            <div class="w-1/3 aspect-[3/4] bg-white/5 border border-[#ffd700]/30 rounded flex flex-col items-center justify-center p-2 relative overflow-hidden group">
+                                <div class="absolute inset-0 bg-gradient-to-br from-[#ffd700]/10 to-transparent"></div>
+                                <span class="text-[5px] text-muted tracking-widest mb-2 border-b border-white/10 pb-1">CERTIFICATE</span>
+                                <span class="text-[6px] text-white font-bold text-center">Grab Your Crown</span>
+                                <span class="text-[5px] text-[#ffd700] mt-1">1st Prize</span>
+                                <div class="w-4 h-4 rounded-full border border-[#ffd700]/50 mt-2 opacity-50"></div>
+                            </div>
+                            <!-- Thumb 2 -->
+                            <div class="w-1/3 aspect-[3/4] bg-white/5 border border-[#c0c0c0]/30 rounded flex flex-col items-center justify-center p-2 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-4 h-4 bg-[#c0c0c0]/20 rounded-bl-full"></div>
+                                <span class="text-[6px] text-white font-bold text-center mb-1">TECH CHARADES</span>
+                                <span class="text-[5px] text-[#c0c0c0] border-t border-white/10 pt-1 w-full text-center mt-2">2nd Prize</span>
+                            </div>
+                            <!-- Thumb 3 -->
+                            <div class="w-1/3 aspect-[3/4] bg-white/5 border border-[#cd7f32]/30 rounded flex flex-col items-center justify-center p-2 relative overflow-hidden">
+                                <span class="text-[6px] text-white font-bold text-center border-b border-[#cd7f32]/30 w-full pb-1 mb-1">PAPER PRESENTATION</span>
+                                <span class="text-[5px] text-[#cd7f32] mt-1 italic">3rd Prize</span>
+                            </div>
+                            <!-- More -->
+                            <div class="absolute right-0 top-14 bottom-6 w-16 bg-gradient-to-l from-[#050507] to-transparent flex items-center justify-end">
+                                <div class="w-10 h-[80%] bg-black/80 backdrop-blur-sm border border-white/10 rounded flex flex-col items-center justify-center cursor-pointer hover:border-accent-cyan/50 transition-colors">
+                                    <span class="text-white font-bold">+8</span>
+                                    <span class="text-[6px] text-muted mt-1 uppercase">MORE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="mt-8 text-[8px] text-white/20 tracking-widest uppercase text-left">
+                RECOGNITION LOG // STILL GROWING...
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <global-footer></global-footer>
+
+    <!-- GSAP & ScrollTrigger Core Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="physics.js"></script>
+</body>
+
+</html>

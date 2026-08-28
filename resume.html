@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jency Soundarya G | Resume</title>
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #333;
+            --accent: #555;
+            --bg: #fff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--secondary);
+            background-color: var(--bg);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.2rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--primary);
+            padding-bottom: 0.2rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .section-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.2rem;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .item-date {
+            font-weight: bold;
+        }
+
+        ul {
+            margin-top: 0.5rem;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Print Styles */
+        @media print {
+            @page {
+                margin: 15mm;
+            }
+            body {
+                padding: 0;
+                max-width: 100%;
+            }
+            header, footer {
+                display: none;
+            }
+            a {
+                color: var(--primary) !important;
+                text-decoration: none;
+            }
+        }
+        
+        .print-btn-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .print-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        @media print {
+            .print-btn-container {
+                display: none;
+            }
+        }
+    
+        @media print {
+            body { background: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .nav-bar, global-navbar, global-footer, bread-crumbs, .noise-overlay, .ambient-field { display: none !important; }
+            .spatial-container { padding: 0 !important; }
+            #resume-container { box-shadow: none !important; border-radius: 0 !important; }
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="spatial.css" rel="stylesheet">
+    <script src="components.js"></script>
+</head>
+<body>
+    <div class="ambient-field"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="noise-overlay"></div>
+    <global-navbar active-page=""></global-navbar>
+    
+    <div class="relative z-10 pt-32 pb-16 px-4 spatial-container">
+        <div class="max-w-4xl mx-auto reveal-up">
+            <bread-crumbs path="HOME, RESUME"></bread-crumbs>
+            <div class="bg-white text-black p-8 md:p-12 rounded-2xl shadow-2xl overflow-hidden print:p-0 print:shadow-none print:m-0" id="resume-container">
+                <div class="print-btn-container">
+        <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <h1>Jency Soundarya G</h1>
+    
+    <div class="contact-info">
+        jencysoundarya@gmail.com | 9943930189 <br>
+        <a href="https://linkedin.com/in/jency-soundarya-b3ba0b250/">linkedin.com/in/jency-soundarya-b3ba0b250/</a> | 
+        <a href="https://github.com/jencysoundarya-boop">github.com/jencysoundarya-boop</a>
+    </div>
+
+    <h2>Profile</h2>
+    <p>Motivated MCA student with interests in User Experience Design, Artificial Intelligence and Software Development. Experienced in UI/UX design, user research, prototyping, and web technologies through academic projects and internship experience. Strong problem-solving and teamwork skills with a passion for building user-centered technology solutions.</p>
+
+    <h2>Education</h2>
+    <div class="section-item">
+        <div class="item-header">
+            <span class="item-title">Kumaraguru College of Technology, Coimbatore</span>
+            <span class="item-date">2025 &ndash; 2027</span>
+        </div>
+        <div class="item-subtitle">Master of Computer Applications</div>
+    </div>
+    
+    <div class="section-item">
+        <div class="item-header">
+            <span class="item-title">Lady Doak College, Madurai</span>
+            <span class="item-date">2022 &ndash; 2025</span>
+        </div>
+        <div class="item-subtitle">Bachelor of Science in Information Technology</div>
+    </div>
+
+    <h2>Internship Experience</h2>
+    <div class="section-item">
+        <div class="item-header">
+            <span class="item-title">UI/UX Design Intern , Tavant Technologies, Bangalore</span>
+            <span class="item-date">May - 2024</span>
+        </div>
+        <ul>
+            <li>Observed and learned the UI/UX design process.</li>
+            <li>Completed assigned UI and UX tasks to strengthen design and problem-solving skills.</li>
+            <li>Designed user interfaces and gained hands-on experience with UX methodologies.</li>
+            <li>Collaborated with team members and presented design work, demonstrating communication and teamwork skills.</li>
+        </ul>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="section-item">
+        <div class="item-title">Intellichat &ndash; Generative AI Voice Assistant (UI/UX Project)</div>
+        <ul>
+            <li>Designed an AI-powered voice assistant focused on intuitive and engaging user interactions.</li>
+            <li>Applied user research, wireframing, and prototyping to create user-centered experiences.</li>
+            <li>Built interactive UI designs in Figma with a focus on accessibility and usability.</li>
+        </ul>
+    </div>
+    
+    <div class="section-item">
+        <div class="item-title">Rojavanam &ndash; Old Age Home Management Application</div>
+        <ul>
+            <li>Built a web-based solution for managing resident information and daily activities in old-age homes.</li>
+            <li>Designed intuitive interfaces to support caregivers and administrators.</li>
+            <li>Focused on accessibility, usability, and user-centered design.</li>
+        </ul>
+    </div>
+
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li><strong>Technical Skills:</strong> HTML, CSS, JavaScript, Python, Database Management, Frontend Development, IoT Fundamentals, Animation</li>
+        <li><strong>UI/UX Skills:</strong> User Research, Wireframing, Prototyping, User-Centered Design</li>
+        <li><strong>Tools:</strong> Figma, Canva, Blender, Inkscape, Microsoft Office</li>
+        <li><strong>Soft Skills:</strong> Leadership, Public Speaking, Team Management, Communication, Problem Solving, Collaboration, Adaptability</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+        <li>UI/UX Design Certification &ndash; Innovel Institute (2025)</li>
+        <li>UI/UX Design Certification &ndash; Teachnook &amp; IIT Roorkee (2024)</li>
+        <li>InfoSec Management Foundation Course (SFC 101) &amp; Security Analyst (NO901) &ndash; NASSCOM, Wadhwani Foundation &amp; Adobe (2024)</li>
+    </ul>
+
+    <h2>Achievements</h2>
+    <ul>
+        <li>Presented and participated in 10+ Paper Presentation competitions across various colleges and secured 7+ winning positions.</li>
+        <li>Won prizes in multiple technical and non-technical intercollegiate competitions, including Technical Events, Photography, Singing, Dancing, Mime, Declamation, Essay Writing, and Stand-Up Comedy.</li>
+        <li>Selected among the Top 100 Speakers in Madurai in ICT Talkathon 2023.</li>
+        <li>Participated in the Smart India Hackathon 2023, collaborating on innovative problem-solving and technology-driven solutions.</li>
+        <li>Served as President of the Rangering Club, leading club activities, coordinating events, and managing teams effectively.</li>
+    </ul>
+            </div>
+    </div>
+    
+    <global-footer></global-footer>
+    
+    <!-- GSAP & ScrollTrigger Core Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="physics.js"></script>
+</body>
+</html>
