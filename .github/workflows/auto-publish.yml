@@ -34,4 +34,5 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add public/assets/weekly src/content/blogs src/data/compiledProtoSem.json
           git commit -m "Auto-compile Obsidian portfolio content [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main || true
           git push
