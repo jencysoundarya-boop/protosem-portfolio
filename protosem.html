@@ -80,32 +80,124 @@
     <!-- Timeline Generation Engine -->
     <script>
         const protosemWeeks = [
-            {
-                week: "00",
-                title: "Orientation & Launch",
-                tagline: "4 Days of Connection, Discovery & Team Building",
-                overview: "Four days of introductions, discovery, learning, games, and team spirit that kicked off the ProtoSem journey.",
-                highlights: "CONNECT → DISCOVER → COLLABORATE → LAUNCH",
-                activities: [
-                    "<b>Day 01 — Icebreakers & Introductions:</b> Self and class introductions, followed by the Rock Paper Scissors game.",
-                    "<b>Day 02 — Discover & Present:</b> LinkedIn session, 16Personalities assessment, and short story presentations.",
-                    "<b>Day 03 — Stories, Talks & Team Games:</b> Story presentations, ITEC TechTalk, Imposter, Challenge, and Marshmello games.",
-                    "<b>Day 04 — Learning & Launch:</b> The Art of Prompting TechTalk, orientation by Hema, leaderboard briefing, and official inauguration."
-                ]
-            }
-        ];
-
-        // Fill remaining up to week 14 with Field Notes in Progress
-        for (let i = 1; i <= 14; i++) {
-            let weekNum = i < 10 ? '0' + i : i.toString();
-            protosemWeeks.push({
-                week: weekNum,
-                title: "Field Notes in Progress",
-                tagline: "Exploration ongoing...",
-                overview: "Details for this week are currently being compiled.",
-                activities: []
-            });
-        }
+          {
+                    week: "00",
+                    title: "Orientation & Launch",
+                    tagline: "4 Days of Connection, Discovery & Team Building",
+                    overview: "Four days of introductions, discovery, learning, games, and team spirit that kicked off the ProtoSem journey.",
+                    highlights: "CONNECT → DISCOVER → COLLABORATE → LAUNCH",
+                    activities: [
+                              "<b>Day 01 — Icebreakers & Introductions:</b> Self and class introductions, followed by the Rock Paper Scissors game.",
+                              "<b>Day 02 — Discover & Present:</b> LinkedIn session, 16Personalities assessment, and short story presentations.",
+                              "<b>Day 03 — Stories, Talks & Team Games:</b> Story presentations, ITEC TechTalk, Imposter, Challenge, and Marshmello games.",
+                              "<b>Day 04 — Learning & Launch:</b> The Art of Prompting TechTalk, orientation by Hema, leaderboard briefing, and official inauguration."
+                    ]
+          },
+          {
+                    week: "01",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "02",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "03",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "04",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "05",
+                    title: "Field Notes Compiled",
+                    tagline: "Exploration logged successfully.",
+                    overview: "Notes and activities for this week have been successfully synced from the portfolio-content vault.",
+                    highlights: "",
+                    activities: [
+                              "<b>Sync Complete:</b> Checkout the detailed week page to view full notes and gallery."
+                    ]
+          },
+          {
+                    week: "06",
+                    title: "Field Notes Compiled",
+                    tagline: "Exploration logged successfully.",
+                    overview: "Notes and activities for this week have been successfully synced from the portfolio-content vault.",
+                    highlights: "",
+                    activities: [
+                              "<b>Sync Complete:</b> Checkout the detailed week page to view full notes and gallery."
+                    ]
+          },
+          {
+                    week: "07",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "08",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "09",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "10",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "11",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "12",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "13",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          },
+          {
+                    week: "14",
+                    title: "Field Notes in Progress",
+                    tagline: "Exploration ongoing...",
+                    overview: "Details for this week are currently being compiled.",
+                    activities: []
+          }
+];
 
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('timeline-container');
