@@ -1,4 +1,17 @@
 {
-  "days": {},
+  "days": {
+    "Week_05_01_Monday": {
+      "title": "01_Monday",
+      "topics": [],
+      "activities": [],
+      "evidenceIds": []
+    },
+    "Week_06_01_Monday": {
+      "title": "01_Monday",
+      "topics": [],
+      "activities": [],
+      "evidenceIds": []
+    }
+  },
   "evidence": []
 }

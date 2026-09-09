@@ -2,13 +2,22 @@
 
 ## 01_Monday
 
-## 02_Tuesday
+# Week 5 Monday Check-in
 
-## 03_Wednesday
+## Topics
+- Introduction to advanced intelligent systems
+- Exploring local AI agents
+- Testing the new Obsidian pipeline
 
-## 04_Thursday
+## Activities
+- Built the automated compiler script
+- Pushed changes to GitHub
+- Verifying the markdown parsing logic
 
-## 05_Friday
+## Thoughts
+This is a sample file created to ensure the automated compilation is picking up markdown files properly from the nested week directories.
 
-## 06_Saturday
+![sample_image.png](/assets/weekly/Week_05/01_Monday/sample_image.png)
+*(Note: Since there is no actual sample_image.png in this folder, the compiler will just leave the web-friendly link in place, but this verifies the regex runs!)*
+
 
