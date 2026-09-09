@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -10,21 +10,22 @@
     <script src="components.js"></script>
 </head>
 
-<body class="bg-black text-white font-sans antialiased overflow-x-hidden relative selection:bg-accent-cyan selection:text-black">
+<body
+    class="bg-black text-white font-sans antialiased overflow-x-hidden relative selection:bg-accent-cyan selection:text-black">
     <script>
-    window.onerror = function(msg, url, lineNo, columnNo, error) {
-        const err = document.createElement('div');
-        err.style.position = 'fixed';
-        err.style.top = '0';
-        err.style.left = '0';
-        err.style.background = 'red';
-        err.style.color = 'white';
-        err.style.zIndex = '999999';
-        err.style.padding = '20px';
-        err.style.fontSize = '20px';
-        err.innerText = msg + ' @ ' + lineNo + ':' + columnNo;
-        document.body.appendChild(err);
-    };
+        window.onerror = function (msg, url, lineNo, columnNo, error) {
+            const err = document.createElement('div');
+            err.style.position = 'fixed';
+            err.style.top = '0';
+            err.style.left = '0';
+            err.style.background = 'red';
+            err.style.color = 'white';
+            err.style.zIndex = '999999';
+            err.style.padding = '20px';
+            err.style.fontSize = '20px';
+            err.innerText = msg + ' @ ' + lineNo + ':' + columnNo;
+            document.body.appendChild(err);
+        };
     </script>
     <div class="ambient-field"></div>
     <div class="glow-orb glow-orb-1"></div>
@@ -32,10 +33,13 @@
     <div class="noise-overlay"></div>
 
     <!-- Cinematic Loader -->
-    <div id="cinematic-loader" class="fixed inset-0 bg-[#050507] z-[9999] flex items-center justify-center pointer-events-none">
+    <div id="cinematic-loader"
+        class="fixed inset-0 bg-[#050507] z-[9999] flex items-center justify-center pointer-events-none">
         <div class="w-full h-[1px] bg-white/10 absolute top-1/2 left-0 -translate-y-1/2"></div>
         <div class="w-[1px] h-full bg-white/10 absolute top-0 left-1/2 -translate-x-1/2"></div>
-        <div class="w-32 h-32 rounded-full border border-white/20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        <div
+            class="w-32 h-32 rounded-full border border-white/20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        </div>
     </div>
 
     <global-navbar active-page="HOME"></global-navbar>
@@ -50,7 +54,7 @@
                 style="width:40vw; height:40vw; border-radius:50%; border: 1px dashed rgba(34, 211, 238, 0.3); transform: rotateX(-40deg) rotateY(-30deg);">
             </div>
         </div>
-        
+
         <!-- Cyber-Grid Horizon -->
         <div class="cyber-grid-container">
             <div class="cyber-grid"></div>
@@ -59,11 +63,13 @@
         <div class="relative z-10 text-center w-full px-4 mix-blend-difference">
             <h1 class="text-hero" style="line-height: 0.95;">
                 <span class="block split-text text-white drop-shadow-2xl">JENCY</span>
-                <span class="block split-text text-transparent" style="-webkit-text-stroke: 3px var(--accent-cyan); -webkit-text-fill-color: transparent;">SOUNDARYA</span>
+                <span class="block split-text text-transparent"
+                    style="-webkit-text-stroke: 3px var(--accent-cyan); -webkit-text-fill-color: transparent;">SOUNDARYA</span>
             </h1>
             <p class="text-meta mt-12 mb-4 hero-sub opacity-0">MCA STUDENT · TECH ENTHUSIAST</p>
             <p class="text-xl md:text-2xl font-light text-muted italic reveal-up" style="transition-delay: 0.3s;">
-                "Motivated MCA student with interests in User Experience Design, Artificial Intelligence and Software Development."</p>
+                "Motivated MCA student with interests in User Experience Design, Artificial Intelligence and Software
+                Development."</p>
 
             <div class="mt-16 flex flex-wrap gap-6 justify-center reveal-up" style="transition-delay: 0.4s;">
                 <a href="#projects" class="magnetic-btn" data-cursor-text="SCROLL">EXPLORE MY WORK →</a>
@@ -86,61 +92,85 @@
             </div>
             <div class="editorial-glass reveal-up" style="transition-delay: 0.2s;">
                 <p class="text-lg md:text-xl leading-relaxed mb-6">
-                    Motivated MCA student with interests in User Experience Design, Artificial Intelligence and Software Development. Experienced in UI/UX design, user research, prototyping, and web technologies through academic projects and internship experience. Strong problem-solving and teamwork skills with a passion for building user-centered technology solutions.
+                    Motivated MCA student with interests in User Experience Design, Artificial Intelligence and Software
+                    Development. Experienced in UI/UX design, user research, prototyping, and web technologies through
+                    academic projects and internship experience. Strong problem-solving and teamwork skills with a
+                    passion for building user-centered technology solutions.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- 05 SKILLS -->
-    <section id="skills" class="py-32 px-4 relative spatial-container overflow-hidden bg-[rgba(255,255,255,0.01)] border-t border-white/5 min-h-[80vh] flex flex-col justify-center">
+    <section id="skills"
+        class="py-32 px-4 relative spatial-container overflow-hidden bg-[rgba(255,255,255,0.01)] border-t border-white/5 min-h-[80vh] flex flex-col justify-center">
         <div class="max-w-7xl mx-auto w-full relative z-10">
             <p class="text-meta text-accent-violet mb-4 reveal-up">02 — THE ARSENAL</p>
-            <h2 class="text-6xl md:text-8xl font-black mb-16 tracking-tighter text-frost reveal-up" style="line-height: 0.9;">
-                SKILLS &<br><span class="text-transparent" style="-webkit-text-stroke: 2px var(--accent-violet);">TOOLKIT</span>
+            <h2 class="text-6xl md:text-8xl font-black mb-16 tracking-tighter text-frost reveal-up"
+                style="line-height: 0.9;">
+                SKILLS &<br><span class="text-transparent"
+                    style="-webkit-text-stroke: 2px var(--accent-violet);">TOOLKIT</span>
             </h2>
-            
+
             <div class="grid lg:grid-cols-2 gap-16 items-center reveal-up">
                 <!-- 3D Kinetic Text Block -->
                 <div class="relative h-[400px] perspective-[1000px] flex items-center justify-center">
-                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.1),transparent_70%)] rounded-full filter blur-2xl"></div>
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.1),transparent_70%)] rounded-full filter blur-2xl">
+                    </div>
                     <div class="grid grid-cols-2 gap-4 w-full h-full tilt-card" style="transform-style: preserve-3d;">
-                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-accent-cyan cursor-default" data-cursor-text="TECH" style="transform: translateZ(40px);">
+                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-accent-cyan cursor-default"
+                            data-cursor-text="TECH" style="transform: translateZ(40px);">
                             <div>
                                 <h3 class="text-xl font-bold text-accent-cyan mb-2">TECHNICAL</h3>
-                                <p class="text-xs text-muted font-mono leading-relaxed">HTML, CSS, JavaScript, Python, Databases, IoT, Animation</p>
+                                <p class="text-xs text-muted font-mono leading-relaxed">HTML, CSS, JavaScript, Python,
+                                    Databases, IoT, Animation</p>
                             </div>
                         </div>
-                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-accent-pink cursor-default" data-cursor-text="UI/UX" style="transform: translateZ(80px);">
+                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-accent-pink cursor-default"
+                            data-cursor-text="UI/UX" style="transform: translateZ(80px);">
                             <div>
                                 <h3 class="text-xl font-bold text-accent-pink mb-2">UI/UX</h3>
-                                <p class="text-xs text-muted font-mono leading-relaxed">User Research, Wireframing, Prototyping, UCD</p>
+                                <p class="text-xs text-muted font-mono leading-relaxed">User Research, Wireframing,
+                                    Prototyping, UCD</p>
                             </div>
                         </div>
-                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-accent-violet cursor-default" data-cursor-text="TOOLS" style="transform: translateZ(60px);">
+                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-accent-violet cursor-default"
+                            data-cursor-text="TOOLS" style="transform: translateZ(60px);">
                             <div>
                                 <h3 class="text-xl font-bold text-accent-violet mb-2">TOOLS</h3>
-                                <p class="text-xs text-muted font-mono leading-relaxed">Figma, Canva, Blender, Inkscape</p>
+                                <p class="text-xs text-muted font-mono leading-relaxed">Figma, Canva, Blender, Inkscape
+                                </p>
                             </div>
                         </div>
-                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-frost cursor-default" data-cursor-text="SOFT" style="transform: translateZ(20px);">
+                        <div class="editorial-glass flex items-center justify-center text-center p-4 hover:border-frost cursor-default"
+                            data-cursor-text="SOFT" style="transform: translateZ(20px);">
                             <div>
                                 <h3 class="text-xl font-bold text-frost mb-2">SOFT SKILLS</h3>
-                                <p class="text-xs text-muted font-mono leading-relaxed">Leadership, Speaking, Management, Collaboration</p>
+                                <p class="text-xs text-muted font-mono leading-relaxed">Leadership, Speaking,
+                                    Management, Collaboration</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Editorial Description -->
                 <div class="spatial-layer pl-0 lg:pl-12">
                     <p class="text-2xl font-light leading-relaxed text-muted mb-8 italic">
-                        "I believe technology is only as powerful as the design that shapes it. My toolkit bridges the gap between <span class="text-white font-medium">engineering logic</span> and <span class="text-accent-pink font-medium">human emotion</span>."
+                        "I believe technology is only as powerful as the design that shapes it. My toolkit bridges the
+                        gap between <span class="text-white font-medium">engineering logic</span> and <span
+                            class="text-accent-pink font-medium">human emotion</span>."
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <span class="px-6 py-3 rounded-full border border-white/10 text-xs font-mono text-accent-cyan uppercase tracking-widest hover:bg-white/5 transition-colors cursor-default">Frontend Dev</span>
-                        <span class="px-6 py-3 rounded-full border border-white/10 text-xs font-mono text-accent-pink uppercase tracking-widest hover:bg-white/5 transition-colors cursor-default">Interaction Design</span>
-                        <span class="px-6 py-3 rounded-full border border-white/10 text-xs font-mono text-accent-violet uppercase tracking-widest hover:bg-white/5 transition-colors cursor-default">Creative Coding</span>
+                        <span
+                            class="px-6 py-3 rounded-full border border-white/10 text-xs font-mono text-accent-cyan uppercase tracking-widest hover:bg-white/5 transition-colors cursor-default">Frontend
+                            Dev</span>
+                        <span
+                            class="px-6 py-3 rounded-full border border-white/10 text-xs font-mono text-accent-pink uppercase tracking-widest hover:bg-white/5 transition-colors cursor-default">Interaction
+                            Design</span>
+                        <span
+                            class="px-6 py-3 rounded-full border border-white/10 text-xs font-mono text-accent-violet uppercase tracking-widest hover:bg-white/5 transition-colors cursor-default">Creative
+                            Coding</span>
                     </div>
                 </div>
             </div>
@@ -151,48 +181,63 @@
     <section id="experience" class="py-32 px-4 md:px-12 relative min-h-[120vh]">
         <div class="max-w-5xl mx-auto relative z-10">
             <p class="text-meta text-accent-cyan mb-4 reveal-up">03 — PROFESSIONAL TIMELINE</p>
-            <h2 class="text-6xl md:text-8xl font-black mb-32 tracking-tighter text-transparent reveal-up" style="-webkit-text-stroke: 2px white;">
+            <h2 class="text-6xl md:text-8xl font-black mb-32 tracking-tighter text-transparent reveal-up"
+                style="-webkit-text-stroke: 2px white;">
                 EXPERIENCE
             </h2>
-            
+
             <!-- Spatial Timeline Container -->
             <div class="relative pt-12 pb-32">
                 <!-- Glowing Scrub Line -->
                 <div class="absolute left-[20px] md:left-[50%] top-0 bottom-0 w-[1px] bg-white/10 ml-[-0.5px]">
-                    <div class="timeline-line w-[3px] bg-gradient-to-b from-accent-cyan via-accent-violet to-accent-pink ml-[-1px] shadow-[0_0_15px_rgba(34,211,238,0.5)]"></div>
+                    <div
+                        class="timeline-line w-[3px] bg-gradient-to-b from-accent-cyan via-accent-violet to-accent-pink ml-[-1px] shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+                    </div>
                 </div>
 
                 <!-- Tavant Technologies -->
-                <div class="relative w-full flex flex-col md:flex-row justify-end md:justify-start items-center mb-48 reveal-up">
-                    <div class="absolute left-[20px] md:left-[50%] w-4 h-4 rounded-full bg-accent-violet shadow-[0_0_20px_var(--accent-violet)] ml-[-8px]"></div>
+                <div
+                    class="relative w-full flex flex-col md:flex-row justify-end md:justify-start items-center mb-48 reveal-up">
+                    <div
+                        class="absolute left-[20px] md:left-[50%] w-4 h-4 rounded-full bg-accent-violet shadow-[0_0_20px_var(--accent-violet)] ml-[-8px]">
+                    </div>
                     <div class="w-full md:w-[45%] pl-16 md:pl-0 md:pr-16 text-left md:text-right">
                         <p class="text-meta text-accent-violet mb-2">MAY 2024</p>
                         <h3 class="text-3xl font-bold mb-2">Tavant Technologies</h3>
                         <p class="text-white/60 font-mono text-sm mb-6">UI/UX Design Intern (Bangalore)</p>
                         <p class="text-muted leading-relaxed italic text-sm">
-                            Gained hands-on experience in UI/UX methodologies, observing the complete design lifecycle. Executed user interfaces and collaborated heavily on design solutions, strengthening problem-solving and presentation skills.
+                            Gained hands-on experience in UI/UX methodologies, observing the complete design lifecycle.
+                            Executed user interfaces and collaborated heavily on design solutions, strengthening
+                            problem-solving and presentation skills.
                         </p>
                     </div>
                 </div>
 
                 <!-- ProtoSem -->
                 <div class="relative w-full flex flex-col md:flex-row justify-end items-center reveal-up">
-                    <div class="absolute left-[20px] md:left-[50%] w-4 h-4 rounded-full bg-accent-cyan shadow-[0_0_20px_var(--accent-cyan)] ml-[-8px]"></div>
+                    <div
+                        class="absolute left-[20px] md:left-[50%] w-4 h-4 rounded-full bg-accent-cyan shadow-[0_0_20px_var(--accent-cyan)] ml-[-8px]">
+                    </div>
                     <div class="w-full md:w-[45%] pl-16 md:pl-16 text-left">
                         <p class="text-meta text-accent-cyan mb-2">2024 - PRESENT</p>
                         <h3 class="text-4xl font-bold mb-2">PRICE PROTOSEM</h3>
                         <p class="text-white/60 font-mono text-sm mb-6">Innovation Engineer Trainee</p>
                         <div class="editorial-glass p-6 hover:border-accent-cyan transition-all group tilt-card">
                             <p class="text-muted leading-relaxed mb-6 text-sm">
-                                A grueling 20-week industry-integrated innovation programme. We build real-world solutions combining AI, analytics, IoT, and prototyping, taking technology far beyond the classroom.
+                                A grueling 20-week industry-integrated innovation programme. We build real-world
+                                solutions combining AI, analytics, IoT, and prototyping, taking technology far beyond
+                                the classroom.
                             </p>
-                            <a href="protosem/index.html" class="magnetic-btn outline text-xs w-full block text-center" data-cursor-text="ENTER">ENTER THE 20-WEEK JOURNEY →</a>
+                            <a href="protosem/index.html" class="magnetic-btn outline text-xs w-full block text-center"
+                                data-cursor-text="ENTER">ENTER THE 20-WEEK JOURNEY →</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Bottom fade out of timeline -->
-                <div class="absolute left-[20px] md:left-[50%] bottom-[-50px] w-[1px] h-[50px] bg-gradient-to-b from-white/10 to-transparent ml-[-0.5px]"></div>
+                <div
+                    class="absolute left-[20px] md:left-[50%] bottom-[-50px] w-[1px] h-[50px] bg-gradient-to-b from-white/10 to-transparent ml-[-0.5px]">
+                </div>
             </div>
         </div>
     </section>
@@ -201,74 +246,95 @@
     <section id="projects" class="py-32 bg-black border-t border-white/5 relative z-20">
         <div class="max-w-7xl mx-auto px-4 md:px-12 mb-32 text-center">
             <p class="text-meta text-accent-pink mb-4 reveal-up">04 — CASE STUDIES</p>
-            <h2 class="text-6xl md:text-8xl font-black tracking-tighter text-transparent reveal-up" style="-webkit-text-stroke: 2px white;">
+            <h2 class="text-6xl md:text-8xl font-black tracking-tighter text-transparent reveal-up"
+                style="-webkit-text-stroke: 2px white;">
                 SELECTED<br>EXHIBITS
             </h2>
         </div>
 
         <!-- Sticky Project 1: Intellichat -->
-        <div class="sticky top-0 w-full h-[100vh] flex items-center justify-center overflow-hidden bg-black border-t border-white/5">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.1),transparent_50%)]"></div>
+        <div
+            class="sticky top-0 w-full h-[100vh] flex items-center justify-center overflow-hidden bg-black border-t border-white/5">
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.1),transparent_50%)]">
+            </div>
             <div class="max-w-7xl mx-auto w-full px-4 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
                 <div class="reveal-up z-10">
                     <p class="text-meta text-accent-cyan font-bold mb-4 tracking-[0.3em]">01 / UI/UX PROJECT</p>
                     <h3 class="text-6xl md:text-7xl font-black mb-6">INTELLICHAT</h3>
                     <p class="text-2xl font-light italic text-muted mb-8">Generative AI Voice Assistant</p>
-                    
+
                     <ul class="text-muted leading-relaxed space-y-6 list-none mb-12">
                         <li class="flex items-start gap-4">
                             <span class="text-accent-cyan mt-1">✦</span>
-                            <span>Designed an AI-powered voice assistant focused on intuitive and engaging user interactions.</span>
+                            <span>Designed an AI-powered voice assistant focused on intuitive and engaging user
+                                interactions.</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <span class="text-accent-cyan mt-1">✦</span>
-                            <span>Applied user research, wireframing, and prototyping to create user-centered experiences.</span>
+                            <span>Applied user research, wireframing, and prototyping to create user-centered
+                                experiences.</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <span class="text-accent-cyan mt-1">✦</span>
-                            <span>Built interactive UI designs in Figma with a focus on accessibility and usability.</span>
+                            <span>Built interactive UI designs in Figma with a focus on accessibility and
+                                usability.</span>
                         </li>
                     </ul>
                     <a href="#" class="magnetic-btn outline text-sm" data-cursor-text="VIEW">VIEW FULL CASE STUDY ↗</a>
                 </div>
-                
+
                 <!-- Abstract 3D placeholder for image -->
-                <div class="hidden lg:flex relative h-[600px] items-center justify-center tilt-card" style="transform-style: preserve-3d;">
-                    <div class="absolute inset-0 border border-white/10 rounded-3xl bg-[rgba(255,255,255,0.02)] backdrop-blur-sm" style="transform: translateZ(20px);"></div>
-                    <div class="absolute inset-4 border border-accent-cyan/30 rounded-2xl" style="transform: translateZ(50px);"></div>
-                    <h4 class="text-9xl font-black text-transparent opacity-30" style="-webkit-text-stroke: 1px var(--accent-cyan); transform: translateZ(80px);">01</h4>
+                <div class="hidden lg:flex relative h-[600px] items-center justify-center tilt-card"
+                    style="transform-style: preserve-3d;">
+                    <div class="absolute inset-0 border border-white/10 rounded-3xl bg-[rgba(255,255,255,0.02)] backdrop-blur-sm"
+                        style="transform: translateZ(20px);"></div>
+                    <div class="absolute inset-4 border border-accent-cyan/30 rounded-2xl"
+                        style="transform: translateZ(50px);"></div>
+                    <h4 class="text-9xl font-black text-transparent opacity-30"
+                        style="-webkit-text-stroke: 1px var(--accent-cyan); transform: translateZ(80px);">01</h4>
                 </div>
             </div>
         </div>
 
         <!-- Sticky Project 2: Rojavanam -->
-        <div class="sticky top-0 w-full h-[100vh] flex items-center justify-center overflow-hidden bg-black border-t border-white/5">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(244,114,182,0.1),transparent_50%)]"></div>
+        <div
+            class="sticky top-0 w-full h-[100vh] flex items-center justify-center overflow-hidden bg-black border-t border-white/5">
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(244,114,182,0.1),transparent_50%)]">
+            </div>
             <div class="max-w-7xl mx-auto w-full px-4 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
                 <!-- Abstract 3D placeholder for image -->
-                <div class="hidden lg:flex relative h-[600px] items-center justify-center tilt-card order-2 lg:order-1" style="transform-style: preserve-3d;">
-                    <div class="absolute inset-0 border border-white/10 rounded-3xl bg-[rgba(255,255,255,0.02)] backdrop-blur-sm" style="transform: translateZ(20px);"></div>
-                    <div class="absolute inset-4 border border-accent-pink/30 rounded-2xl" style="transform: translateZ(50px);"></div>
-                    <h4 class="text-9xl font-black text-transparent opacity-30" style="-webkit-text-stroke: 1px var(--accent-pink); transform: translateZ(80px);">02</h4>
+                <div class="hidden lg:flex relative h-[600px] items-center justify-center tilt-card order-2 lg:order-1"
+                    style="transform-style: preserve-3d;">
+                    <div class="absolute inset-0 border border-white/10 rounded-3xl bg-[rgba(255,255,255,0.02)] backdrop-blur-sm"
+                        style="transform: translateZ(20px);"></div>
+                    <div class="absolute inset-4 border border-accent-pink/30 rounded-2xl"
+                        style="transform: translateZ(50px);"></div>
+                    <h4 class="text-9xl font-black text-transparent opacity-30"
+                        style="-webkit-text-stroke: 1px var(--accent-pink); transform: translateZ(80px);">02</h4>
                 </div>
 
                 <div class="reveal-up z-10 order-1 lg:order-2">
                     <p class="text-meta text-accent-pink font-bold mb-4 tracking-[0.3em]">02 / WEB APPLICATION</p>
                     <h3 class="text-6xl md:text-7xl font-black mb-6">ROJAVANAM</h3>
                     <p class="text-2xl font-light italic text-muted mb-8">Old Age Home Management Application</p>
-                    
+
                     <ul class="text-muted leading-relaxed space-y-6 list-none mb-12">
                         <li class="flex items-start gap-4">
                             <span class="text-accent-pink mt-1">✦</span>
-                            <span>Built a web-based solution for managing resident information and daily activities in old-age homes.</span>
+                            <span>Built a web-based solution for managing resident information and daily activities in
+                                old-age homes.</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <span class="text-accent-pink mt-1">✦</span>
-                            <span>Designed intuitive interfaces to support caregivers and administrators efficiently.</span>
+                            <span>Designed intuitive interfaces to support caregivers and administrators
+                                efficiently.</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <span class="text-accent-pink mt-1">✦</span>
-                            <span>Focused on accessibility, usability, and rigorous user-centered design practices.</span>
+                            <span>Focused on accessibility, usability, and rigorous user-centered design
+                                practices.</span>
                         </li>
                     </ul>
                     <a href="#" class="magnetic-btn outline text-sm" data-cursor-text="VIEW">VIEW FULL CASE STUDY ↗</a>
@@ -282,63 +348,108 @@
         <div class="max-w-4xl mx-auto reveal-up">
             <p class="text-meta text-accent-cyan font-bold tracking-[0.3em] mb-4">05 — RECOGNITION</p>
             <h2 class="text-4xl md:text-5xl font-black mb-8">ACHIEVEMENTS & ACTIVITIES</h2>
-            <p class="text-xl text-muted mb-12">Explore my milestones, awards, podium finishes, and continuous learning experiences.</p>
-            <a href="achievements.html" class="magnetic-btn px-12 py-5 text-lg" data-cursor-text="OPEN">VIEW ALL ACHIEVEMENTS ↗</a>
+            <p class="text-xl text-muted mb-12">Explore my milestones, awards, podium finishes, and continuous learning
+                experiences.</p>
+            <a href="achievements.html" class="magnetic-btn px-12 py-5 text-lg" data-cursor-text="OPEN">VIEW ALL
+                ACHIEVEMENTS ↗</a>
         </div>
     </section>
 
     <!-- 09 CERTIFICATIONS -->
-    <section id="credentials" class="py-32 px-4 md:px-12 bg-black border-t border-white/5 relative z-10 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,114,182,0.05),transparent_60%)] pointer-events-none"></div>
+    <section id="credentials"
+        class="py-32 px-4 md:px-12 bg-black border-t border-white/5 relative z-10 overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,114,182,0.05),transparent_60%)] pointer-events-none">
+        </div>
         <div class="max-w-7xl mx-auto">
             <p class="text-meta text-accent-violet mb-4 reveal-up text-center">06 — CREDENTIAL VAULT</p>
-            <h2 class="text-6xl md:text-8xl font-black mb-32 tracking-tighter text-transparent reveal-up text-center" style="-webkit-text-stroke: 2px white;">
+            <h2 class="text-6xl md:text-8xl font-black mb-32 tracking-tighter text-transparent reveal-up text-center"
+                style="-webkit-text-stroke: 2px white;">
                 CERTIFICATIONS
             </h2>
-            
+
             <div class="grid lg:grid-cols-3 gap-12 lg:gap-8 perspective-[1500px]">
-                
+
                 <!-- Cert 1 -->
-                <div class="relative group tilt-card cursor-pointer reveal-up" style="transform-style: preserve-3d;" data-cursor-text="VIEW">
-                    <div class="absolute inset-[-10px] bg-accent-cyan/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
-                    <div class="editorial-glass h-full p-8 bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-white/10 group-hover:border-accent-cyan transition-all duration-500" style="transform: translateZ(30px);">
-                        <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-8 border border-white/10" style="transform: translateZ(50px);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M12 15l-2-2v-3h4v3l-2 2z"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                <div class="relative group tilt-card cursor-pointer reveal-up" style="transform-style: preserve-3d;"
+                    data-cursor-text="VIEW">
+                    <div
+                        class="absolute inset-[-10px] bg-accent-cyan/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+                    </div>
+                    <div class="editorial-glass h-full p-8 bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-white/10 group-hover:border-accent-cyan transition-all duration-500"
+                        style="transform: translateZ(30px);">
+                        <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-8 border border-white/10"
+                            style="transform: translateZ(50px);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)"
+                                stroke-width="2">
+                                <path d="M12 15l-2-2v-3h4v3l-2 2z"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 group-hover:text-accent-cyan transition-colors" style="transform: translateZ(40px);">UI/UX Design Certification</h3>
-                        <p class="text-meta text-accent-cyan mb-8" style="transform: translateZ(20px);">Innovel Institute · 2025</p>
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-accent-cyan transition-colors"
+                            style="transform: translateZ(40px);">UI/UX Design Certification</h3>
+                        <p class="text-meta text-accent-cyan mb-8" style="transform: translateZ(20px);">Innovel
+                            Institute · 2025</p>
                         <div class="mt-auto" style="transform: translateZ(30px);">
-                            <span class="text-xs font-bold uppercase tracking-widest text-white/50 border-b border-white/20 pb-1 group-hover:text-white transition-colors">VERIFIED CREDENTIAL ↗</span>
+                            <span
+                                class="text-xs font-bold uppercase tracking-widest text-white/50 border-b border-white/20 pb-1 group-hover:text-white transition-colors">VERIFIED
+                                CREDENTIAL ↗</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Cert 2 -->
-                <div class="relative group tilt-card cursor-pointer reveal-up" style="transform-style: preserve-3d;" data-cursor-text="VIEW">
-                    <div class="absolute inset-[-10px] bg-accent-violet/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
-                    <div class="editorial-glass h-full p-8 bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-white/10 group-hover:border-accent-violet transition-all duration-500" style="transform: translateZ(30px);">
-                        <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-8 border border-white/10" style="transform: translateZ(50px);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2"><path d="M12 15l-2-2v-3h4v3l-2 2z"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                <div class="relative group tilt-card cursor-pointer reveal-up" style="transform-style: preserve-3d;"
+                    data-cursor-text="VIEW">
+                    <div
+                        class="absolute inset-[-10px] bg-accent-violet/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+                    </div>
+                    <div class="editorial-glass h-full p-8 bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-white/10 group-hover:border-accent-violet transition-all duration-500"
+                        style="transform: translateZ(30px);">
+                        <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-8 border border-white/10"
+                            style="transform: translateZ(50px);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)"
+                                stroke-width="2">
+                                <path d="M12 15l-2-2v-3h4v3l-2 2z"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 group-hover:text-accent-violet transition-colors" style="transform: translateZ(40px);">UI/UX Design Certification</h3>
-                        <p class="text-meta text-accent-violet mb-8" style="transform: translateZ(20px);">Teachnook & IIT Roorkee · 2024</p>
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-accent-violet transition-colors"
+                            style="transform: translateZ(40px);">UI/UX Design Certification</h3>
+                        <p class="text-meta text-accent-violet mb-8" style="transform: translateZ(20px);">Teachnook &
+                            IIT Roorkee · 2024</p>
                         <div class="mt-auto" style="transform: translateZ(30px);">
-                            <span class="text-xs font-bold uppercase tracking-widest text-white/50 border-b border-white/20 pb-1 group-hover:text-white transition-colors">VERIFIED CREDENTIAL ↗</span>
+                            <span
+                                class="text-xs font-bold uppercase tracking-widest text-white/50 border-b border-white/20 pb-1 group-hover:text-white transition-colors">VERIFIED
+                                CREDENTIAL ↗</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Cert 3 -->
-                <div class="relative group tilt-card cursor-pointer reveal-up" style="transform-style: preserve-3d;" data-cursor-text="VIEW">
-                    <div class="absolute inset-[-10px] bg-accent-pink/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
-                    <div class="editorial-glass h-full p-8 bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-white/10 group-hover:border-accent-pink transition-all duration-500" style="transform: translateZ(30px);">
-                        <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-8 border border-white/10" style="transform: translateZ(50px);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2"><path d="M12 15l-2-2v-3h4v3l-2 2z"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                <div class="relative group tilt-card cursor-pointer reveal-up" style="transform-style: preserve-3d;"
+                    data-cursor-text="VIEW">
+                    <div
+                        class="absolute inset-[-10px] bg-accent-pink/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+                    </div>
+                    <div class="editorial-glass h-full p-8 bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-white/10 group-hover:border-accent-pink transition-all duration-500"
+                        style="transform: translateZ(30px);">
+                        <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-8 border border-white/10"
+                            style="transform: translateZ(50px);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)"
+                                stroke-width="2">
+                                <path d="M12 15l-2-2v-3h4v3l-2 2z"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4 group-hover:text-accent-pink transition-colors" style="transform: translateZ(40px);">InfoSec Management & Security Analyst (NO901)</h3>
-                        <p class="text-meta text-accent-pink mb-8" style="transform: translateZ(20px);">NASSCOM, Wadhwani Foundation & Adobe · 2024</p>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-accent-pink transition-colors"
+                            style="transform: translateZ(40px);">InfoSec Management & Security Analyst (NO901)</h3>
+                        <p class="text-meta text-accent-pink mb-8" style="transform: translateZ(20px);">NASSCOM,
+                            Wadhwani Foundation & Adobe · 2024</p>
                         <div class="mt-auto" style="transform: translateZ(30px);">
-                            <span class="text-xs font-bold uppercase tracking-widest text-white/50 border-b border-white/20 pb-1 group-hover:text-white transition-colors">VERIFIED CREDENTIAL ↗</span>
+                            <span
+                                class="text-xs font-bold uppercase tracking-widest text-white/50 border-b border-white/20 pb-1 group-hover:text-white transition-colors">VERIFIED
+                                CREDENTIAL ↗</span>
                         </div>
                     </div>
                 </div>
@@ -348,162 +459,283 @@
     </section>
 
     <!-- 10 WORKSHOPS & TRAINING -->
-    <section id="workshops" class="py-32 px-4 md:px-12 border-t border-white/5 relative spatial-container overflow-hidden">
+    <section id="workshops"
+        class="py-32 px-4 md:px-12 border-t border-white/5 relative spatial-container overflow-hidden">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 text-center reveal-up">
                 <p class="text-meta text-accent-pink mb-4">07 — CONTINUOUS LEARNING</p>
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">WORKSHOPS & TRAINING</h2>
-                <p class="text-muted text-lg italic max-w-2xl mx-auto">10+ learning experiences. Multiple disciplines. One continuous journey of growth.</p>
+                <p class="text-muted text-lg italic max-w-2xl mx-auto">10+ learning experiences. Multiple disciplines.
+                    One continuous journey of growth.</p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Cyber Security</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Introduction to cybersecurity concepts, threats, protection strategies, and digital safety.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Introduction to cybersecurity concepts,
+                            threats, protection strategies, and digital safety.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                                <circle cx="12" cy="5" r="2"></circle>
+                                <path d="M12 7v4"></path>
+                                <line x1="8" y1="16" x2="8" y2="16"></line>
+                                <line x1="16" y1="16" x2="16" y2="16"></line>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Artificial Intelligence</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Explored fundamental AI concepts, applications, and emerging technologies.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Explored fundamental AI concepts,
+                            applications, and emerging technologies.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="20" x2="12" y2="10"></line>
+                                <line x1="18" y1="20" x2="18" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="16"></line>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Big Data Analytics</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Learned about big data concepts, analytics techniques, and real-world applications.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Learned about big data concepts, analytics
+                            techniques, and real-world applications.</p>
                     </div>
                     <div>
                         <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">NIT · 2024</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--frost)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--frost)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Flutter & Thunkable</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Explored mobile application development using Flutter and no-code/low-code tools.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Explored mobile application development using
+                            Flutter and no-code/low-code tools.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Mepco Schlenk Engineering College · 2024</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Mepco Schlenk
+                            Engineering College · 2024</div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.1 0 2-.9 2-2 0-.53-.21-1.04-.59-1.41C13.03 18.21 12.83 17.7 12.83 17.17c0-1.1.9-2 2-2h1.63c3.04 0 5.54-2.5 5.54-5.54C22 6.13 17.52 2 12 2z"></path><circle cx="6.5" cy="11.5" r="1.5"></circle><circle cx="10.5" cy="7.5" r="1.5"></circle><circle cx="14.5" cy="7.5" r="1.5"></circle><circle cx="17.5" cy="11.5" r="1.5"></circle></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.1 0 2-.9 2-2 0-.53-.21-1.04-.59-1.41C13.03 18.21 12.83 17.7 12.83 17.17c0-1.1.9-2 2-2h1.63c3.04 0 5.54-2.5 5.54-5.54C22 6.13 17.52 2 12 2z">
+                                </path>
+                                <circle cx="6.5" cy="11.5" r="1.5"></circle>
+                                <circle cx="10.5" cy="7.5" r="1.5"></circle>
+                                <circle cx="14.5" cy="7.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="11.5" r="1.5"></circle>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">UI/UX & Figma Design</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Explored user interface design, user experience principles, and digital prototyping using Figma.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Explored user interface design, user
+                            experience principles, and digital prototyping using Figma.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Power BI & Data Visualization</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Learned how to transform data into meaningful dashboards, reports, and visual insights.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Learned how to transform data into meaningful
+                            dashboards, reports, and visual insights.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 7 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Databricks & Data Tech</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Gained exposure to modern data platforms, analytics workflows, and data engineering concepts.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Gained exposure to modern data platforms,
+                            analytics workflows, and data engineering concepts.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 8 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--frost)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10s3-3 3-8"></path><path d="M22 10s-3-3-3-8"></path><path d="M10 4.6l2-2.6 2 2.6"></path><path d="M2 13.5c0 4.1 4.5 7.5 10 7.5s10-3.4 10-7.5-4.5-7.5-10-7.5-10 3.4-10 7.5z"></path><circle cx="8" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><path d="M10 16c1.1.7 2.9.7 4 0"></path></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--frost)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 10s3-3 3-8"></path>
+                                <path d="M22 10s-3-3-3-8"></path>
+                                <path d="M10 4.6l2-2.6 2 2.6"></path>
+                                <path d="M2 13.5c0 4.1 4.5 7.5 10 7.5s10-3.4 10-7.5-4.5-7.5-10-7.5-10 3.4-10 7.5z">
+                                </path>
+                                <circle cx="8" cy="11" r="1"></circle>
+                                <circle cx="16" cy="11" r="1"></circle>
+                                <path d="M10 16c1.1.7 2.9.7 4 0"></path>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Western Musical Theatre</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Explored performance, musical theatre techniques, creativity, and stage expression.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Explored performance, musical theatre
+                            techniques, creativity, and stage expression.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Centre for Music, Lady Doak College · 2023</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Centre for Music,
+                            Lady Doak College · 2023</div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 9 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">French Culture & Language</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Developed awareness of French culture, language, cuisine, and cultural practices.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Developed awareness of French culture,
+                            language, cuisine, and cultural practices.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
                 <!-- Card 10 -->
-                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up" data-cursor-text="VIEW">
+                <div class="editorial-glass p-8 group hover:border-white/30 transition-all duration-300 flex flex-col justify-between reveal-up"
+                    data-cursor-text="VIEW">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 text-2xl group-hover:bg-white/10 transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18h6"></path>
+                                <path d="M10 22h4"></path>
+                                <path
+                                    d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14">
+                                </path>
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-frost">Professional Development</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Participated in programs focused on communication, confidence, creativity, and professional skills.</p>
+                        <p class="text-muted text-sm leading-relaxed mb-6">Participated in programs focused on
+                            communication, confidence, creativity, and professional skills.</p>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions</div>
-                        <a href="#" class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE COMING SOON</a>
+                        <div class="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">Various Institutions
+                        </div>
+                        <a href="#"
+                            class="inline-block px-4 py-2 border border-white/10 rounded-full text-[10px] font-bold tracking-widest hover:bg-white hover:text-black transition-colors opacity-50">CERTIFICATE
+                            COMING SOON</a>
                     </div>
                 </div>
 
@@ -545,7 +777,7 @@
     <!-- 13 CONTACT -->
     <global-footer></global-footer>
 
-    
+
     <!-- GSAP & ScrollTrigger Core Engine -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
